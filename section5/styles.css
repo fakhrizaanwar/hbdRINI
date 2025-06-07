@@ -1,0 +1,84 @@
+body {
+  background-color: #1a1a1a;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  color: #F4F4F4;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.note {
+  position: relative;
+  background-color: #F4F4F4;
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 100px;
+  padding: 20px;
+  margin: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.note:hover {
+  transform: scale(1.1);
+}
+
+.note .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.note .expand {
+  cursor: pointer;
+  font-size: 12px;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.note .expand:hover {
+  color: #ff1493;
+}
+
+.note .content {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.container-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  font-size: 15px;
+  padding: 15px;
+  background-color: #1A1A1A;
+  color: #F4F4F4;
+  border: 2px solid #F4F4F4;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: #F4F4F4;
+  color: #1A1A1A;
+}
